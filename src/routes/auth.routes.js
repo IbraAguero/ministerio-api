@@ -4,30 +4,30 @@ import {
   refresh,
   forgetPassword,
   changePassword,
-} from '../controllers/auth.controller.js';
-import loginLimiter from '../middleware/loginLimiter.js';
-import { Router } from 'express';
-import { validateSchema } from '../middleware/validatorSchema.js';
+} from "../controllers/auth.controller.js";
+import loginLimiter from "../middleware/loginLimiter.js";
+import { Router } from "express";
+import { validateSchema } from "../middleware/validatorSchema.js";
 import {
   changePasswordSchemma,
   forgetPasswordSchema,
-} from '../Schemas/auth.schema.js';
+} from "../schemas/auth.schema.js";
 
 const router = Router();
 
-router.post('/', loginLimiter, login);
+router.post("/", loginLimiter, login);
 
-router.get('/refresh', refresh);
+router.get("/refresh", refresh);
 
-router.post('/logout', logout);
+router.post("/logout", logout);
 
 router.post(
-  '/forgetpassword',
+  "/forgetpassword",
   validateSchema(forgetPasswordSchema),
   forgetPassword
 );
 router.post(
-  '/changepassword',
+  "/changepassword",
   validateSchema(changePasswordSchemma),
   changePassword
 );

@@ -5,7 +5,7 @@ import {
   deleteUser,
   updateUser,
 } from "../controllers/users.controller.js";
-import { createUserSchema } from "../Schemas/user.scheama.js";
+import { createUserSchema } from "../schemas/user.scheama.js";
 import { validateSchema } from "../middleware/validatorSchema.js";
 import verifyJWT from "../middleware/verifyJWT.js";
 

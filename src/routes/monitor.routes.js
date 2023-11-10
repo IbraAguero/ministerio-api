@@ -2,7 +2,7 @@ import { Router } from "express";
 
 import { validateSchema } from "../middleware/validatorSchema.js";
 import verifyJWT from "../middleware/verifyJWT.js";
-import { monitorSchema } from "../Schemas/monitor.schema.js";
+import { monitorSchema } from "../schemas/monitor.schema.js";
 import {
   createMonitor,
   deleteMonitor,

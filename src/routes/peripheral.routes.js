@@ -1,7 +1,7 @@
 import { Router } from "express";
 import verifyJWT from "../middleware/verifyJWT.js";
 import { validateSchema } from "../middleware/validatorSchema.js";
-import { peripheralSchema } from "../Schemas/peripheral.schema.js";
+import { peripheralSchema } from "../schemas/peripheral.schema.js";
 import {
   createPeripheral,
   deletePeripheral,

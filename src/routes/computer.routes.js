@@ -12,7 +12,7 @@ import motherBoardRoutes from "../routes/motherBoard.routes.js";
 import hddRoutes from "../routes/hdd.routes.js";
 import graphicCardRoutes from "../routes/graphicCard.routes.js";
 import { validateSchema } from "../middleware/validatorSchema.js";
-import { computerSchema } from "../Schemas/computer.schema.js";
+import { computerSchema } from "../schemas/computer.schema.js";
 
 const router = Router();
 

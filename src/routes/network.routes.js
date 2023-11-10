@@ -1,7 +1,7 @@
 import { Router } from "express";
 import verifyJWT from "../middleware/verifyJWT.js";
 import { validateSchema } from "../middleware/validatorSchema.js";
-import { networkSchema } from "../Schemas/network.schema.js";
+import { networkSchema } from "../schemas/network.schema.js";
 import {
   createNetwork,
   deleteNetwork,
